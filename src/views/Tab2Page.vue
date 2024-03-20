@@ -6,9 +6,9 @@
       </ion-toolbar>
     </ion-header>
     <ion-content class="ion-padding">
-      <ion-card>
+      <ion-card v-for="n, index  in 5" :key="n">
         <ion-card-header>
-          <ion-card-title>Card Title</ion-card-title>
+          <ion-card-title>Card Title {{ index + 1 }}</ion-card-title>
           <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
         </ion-card-header>
 
@@ -20,11 +20,6 @@
   </ion-page>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import { IonPage, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/vue';
-import { defineComponent } from 'vue';
-
-export default defineComponent({
-  components: { IonPage, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonContent, IonHeader, IonTitle, IonToolbar },
-});
 </script>
