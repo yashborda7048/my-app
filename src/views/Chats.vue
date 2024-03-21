@@ -2,7 +2,7 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title>Header</ion-title>
+        <ion-title>Chats</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content class="ion-padding">
